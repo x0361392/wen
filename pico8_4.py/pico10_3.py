@@ -2,7 +2,7 @@ import network
 import time
 
 ssid = 'AndroidAP6bbc'
-password = ' befd3822'
+password = 'befd3822'
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
@@ -15,7 +15,7 @@ wlan.connect(ssid,password)
 #status=3連線成功
 #<0,>3失敗的連線
 
-max_wait = 10
+max_wait = 20
 while max_wait > 0:
     status = wlan.status()
     if status < 0 or status >= 3:
