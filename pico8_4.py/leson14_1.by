@@ -1,0 +1,6 @@
+from machine import Timer,Pin
+
+der fun10(t:Timer):
+    print('10 秒了
+
+Timer(ptimer10=eriod=10000, mode=Timer.ONE_SHOT, callback=lambda t:print(1))
